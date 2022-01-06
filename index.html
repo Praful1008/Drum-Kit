@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/ds1favico.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            background-image: url('images/CJYAEO.jpg');
+            background-position: center;
+            background-repeat: none;
+            background-size: cover;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+
+
+        .container {
+            width: 90%;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 500px;
+        }
+
+        .drum {
+            color: maroon;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: xx-large;
+            display: flex;
+            border: 2px solid darkgoldenrod;
+            height: 80px;
+            width: 80px;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            margin: 10px;
+            box-shadow: 5px 5px rgb(87, 0, 0);
+            transition-property: all;
+            transition-duration: 0.5s;
+            background-color: rgba(245, 245, 245, 0.74);
+        }
+        .drumDark{
+            box-shadow: 5px 5px white;
+            background-color: transparent;
+        }
+        .container .drum:hover{
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            color: white;
+        }
+        .anima{
+            background-color: rgba(184, 135, 11, 0.856);
+            transition-duration: 0s;
+            transform: scale(1.1);
+        }
+
+        .dark_mode {
+            background-color: black;
+        }
+    </style>
+    <title>Drum🎵🎶Kit</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <a class="navbar-brand" href="index.html" style="font-family: cursive;">Drum Kit 🥁🎵</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item " style="margin: 0px; padding: 0px; box-sizing: border-box">
+                    <button class="dm btn-primary" style="justify-content: center; align-items: center; margin: 5px;">
+                        DARK MODE</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="A" class="drum">A</div>
+        <div id="S" class="drum">S</div>
+        <div id="G" class="drum">G</div>
+        <div id="H" class="drum">H</div>
+        <div id="J" class="drum">J</div>
+        <div id="K" class="drum">K</div>
+        <div id="L" class="drum">L</div>
+        <div id="W" class="drum">W</div>
+    </div>
+    <script src="drum_kit_script/ds1.js"></script>
+
+</body>
+<footer>
+    <p>Made in India</p>
+</footer>
+
+</html>
